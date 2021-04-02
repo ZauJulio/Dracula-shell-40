@@ -1,3 +1,21 @@
+/* Copyright 2009, 2015 Red Hat, Inc.
+ *
+ * Portions adapted from Mx's data/style/default.css
+ *   Copyright 2009 Intel Corporation
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms and conditions of the GNU Lesser General Public License,
+ * version 2.1, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ */
 /* Global Values */
 stage {
   font-size: 11pt;
@@ -1190,8 +1208,8 @@ StScrollBar {
 
 /* Activities Ripple */
 .ripple-box {
-  background-color: rgba(243, 247, 255, 0.3);
-  box-shadow: 0 0 2px 2px #8db7ff;
+  background-color: #2e313d !important;
+  box-shadow: none;
   width: 52px;
   height: 52px;
   border-radius: 0 0 52px 0; }
@@ -1445,6 +1463,7 @@ StScrollBar {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(238, 238, 236, 0);
     text-shadow: none;
     icon-shadow: none;
+    height: 20px;
     color: #bfbfbf; }
   .app-view-control:hover {
     color: white;
@@ -1462,19 +1481,7 @@ StScrollBar {
 
 /* Dash */
 #dash {
-  font-size: 9pt;
-  margin-top: 12px;
-  background-color: #1d1f27;
-  padding: 0 10px; }
-  #dash .placeholder {
-    background-image: none;
-    background-size: contain;
-    height: 32px; }
-  #dash .empty-dash-drop-target {
-    width: 32px;
-    height: 32px; }
-  #dash .overview-icon {
-    padding: 5px; }
+  background-color: #1d1f27; }
 
 .dash-background {
   background-color: #2e313d;
@@ -2306,6 +2313,9 @@ StScrollBar {
     text-shadow: none;
     icon-shadow: none;
     box-shadow: none; }
+  .calendar, .world-clocks-button, .weather-button, .events-button {
+    background: transparent;
+    border: none; }
 
 /* World clocks */
 .world-clocks-button {
