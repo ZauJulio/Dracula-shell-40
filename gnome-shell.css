@@ -1483,7 +1483,7 @@ StScrollBar {
 
 /* Dash */
 #dash {
-  background-color: #1d1f27; }
+  background-color: transparent; }
 
 .dash-background {
   background-color: #2e313d;
